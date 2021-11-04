@@ -1,16 +1,16 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Search from "../screens/Search"
+import QuienesSomos from "../screens/QuienesSomos";
 
 const Stack = createStackNavigator();
 
-export default function SearchStack(){
+export default function QuienesSomosStack(){
     return(
         <Stack.Navigator>
             <Stack.Screen
-                name="search"
-                component = {Search}
-                options = {{title: "Buscar"}}            
+                name="quienes-somos"
+                component = {QuienesSomos}
+                options = {{title: "Quienes Somos"}}            
             />
         </Stack.Navigator>
     );

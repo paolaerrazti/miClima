@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Poryecto miClima Codo a Codo IBM",
+    "githubUrl": "https://github.com/pablolupo84/miClima"
   }
 }

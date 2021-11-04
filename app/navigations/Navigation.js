@@ -2,13 +2,9 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-
-import AccountStack from "./AccountStack";
-import FavoritesStack from "./FavouriteStack";
-import SearchStack from "./SearchStack";
-import TopRestaurantsStack from "./TopRestaurantsStack";
-import RestaurantesStack from "./RestaurantStack";
-
+import HomeStack from "./HomeStack";
+import ListStack from "./ListStack";
+import QuienesSomosStack from "./QuienesSomosStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -17,29 +13,19 @@ export default function Navigation(){
         <NavigationContainer>
             <Tab.Navigator>
                 <Tab.Screen
-                    name="restaurants"
-                    component={RestaurantesStack}
-                    options={{title:"Restaurantes"}}
+                    name="home"
+                    component={HomeStack}
+                    options={{title:"Home"}}
                 />
                 <Tab.Screen
-                    name="favorites"
-                    component={FavoritesStack}
-                    options={{title:"Favoritos"}}
+                    name="listado-ciudades"
+                    component={ListStack}
+                    options={{title:"Listado de Ciudades"}}
                 />
                 <Tab.Screen
-                    name="top-restaurants"
-                    component={TopRestaurantsStack}
-                    options={{title:"Top 5"}}
-                />
-                <Tab.Screen
-                    name="search"
-                    component={SearchStack}
-                    options={{title:"Buscador"}}
-                />
-                <Tab.Screen
-                    name="account"
-                    component={AccountStack}
-                    options={{title:"MI Cuenta"}}
+                    name="quienes-somos"
+                    component={QuienesSomosStack}
+                    options={{title:"Quines Somos"}}
                 />
             </Tab.Navigator>
         </NavigationContainer>

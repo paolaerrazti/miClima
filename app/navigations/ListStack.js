@@ -1,15 +1,16 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Restaurants from "../screens/Restaurants";
+import List from "../screens/List";
+
 const Stack = createStackNavigator();
 
-export default function RestaurantesStack(){
+export default function ListStack(){
     return(
         <Stack.Navigator>
             <Stack.Screen
-                name="restaurants"
-                component = {Restaurants}
-                options = {{title: "Restaurantes"}}            
+                name="list"
+                component = {List}
+                options = {{title: "Listado"}}            
             />
         </Stack.Navigator>
     );
